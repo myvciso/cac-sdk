@@ -1,0 +1,39 @@
+@myvciso/cac-sdk — Community Notice
+==========================
+
+Community-maintained SDK
+------------------------
+
+This project is not affiliated with, endorsed by, or sponsored by Intuitem
+(https://intuitem.com) or the CISO Assistant project
+(https://github.com/intuitem/ciso-assistant-community) and its maintainers.
+
+Trademarks
+----------
+
+"CISO Assistant" and related names, logos, and marks are trademarks of their
+respective owners. Their use in this package is for identification and
+interoperability only and does not imply affiliation, sponsorship, or
+endorsement.
+
+Disclaimer
+----------
+
+This software is provided "AS IS", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement. In no event shall the
+authors or copyright holders be liable for any claim, damages, or other
+liability, whether in an action of contract, tort, or otherwise, arising from,
+out of, or in connection with the software or the use or other dealings in the
+software.
+
+Third-party software
+--------------------
+
+This SDK communicates with the CISO Assistant REST API. CISO Assistant
+Community Edition is licensed separately under the AGPLv3 by its respective
+copyright holders. See the upstream project for license terms:
+https://github.com/intuitem/ciso-assistant-community
+
+The OpenAPI specification vendored in this package is derived from the public
+CISO Assistant API schema and is used for client generation only.

@@ -1,0 +1,50 @@
+{
+  "name": "@myvciso/cac-sdk",
+  "version": "0.1.0",
+  "description": "Community-maintained Node.js SDK for CISO Assistant Community (not affiliated with or endorsed by Intuitem). Full REST API coverage.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "NOTICE",
+    "specs/ciso_assistant.json"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate-from-openapi.mjs",
+    "build": "npm run generate && tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ciso-assistant",
+    "grc",
+    "compliance",
+    "risk-management",
+    "security",
+    "api-client"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "undici": "^7.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myvciso/cac-sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
